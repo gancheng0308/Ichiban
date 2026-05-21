@@ -3,65 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>一番赏系统原型</title>
+  <title>一番赏首页</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <h1>一番赏系统原型</h1>
-    <p>根据设计稿快速搭建（用户端 + 管理后台）</p>
-  </header>
+  <main class="app-stage">
+    <section class="phone-frame" aria-label="一番赏首页预览">
+      <div class="phone-screen">
+        <section class="hero-banner">
+          <img
+            class="hero-cover"
+            src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=pastel%20pink%20toy%20collectible%20banner%2C%20cute%20vinyl%20doll%20next%20to%20a%20large%20pink%20blind%20box%2C%20sweet%20macaron%20theme%2C%20warm%20peach%20background%2C%20premium%20promotional%20poster%2C%20soft%20glow%2C%20highly%20detailed&image_size=landscape_4_3"
+            alt="甜心马卡龙系列一番赏 banner"
+          />
+          <div class="hero-dots" aria-hidden="true">
+            <span></span>
+            <span class="active"></span>
+            <span></span>
+          </div>
+        </section>
 
-  <main class="grid">
-    <section class="phone">
-      <h2>用户端 · 首页</h2>
-      <div class="card hero">甜心马卡龙系列一番赏</div>
-      <div class="menu">
-        <span>全部赏品</span><span>我的奖品</span><span>活动公告</span><span>新手指南</span>
-      </div>
-      <div class="product-list">
-        <article><b>LABUBU 森林秘境</b><p>¥69/抽</p></article>
-        <article><b>DIMOO 时光漫游</b><p>¥59/抽</p></article>
-        <article><b>MEGA SPACE 系列</b><p>¥79/抽</p></article>
-      </div>
-      <nav class="bottom-nav"><span>首页</span><span>全部赏品</span><span class="active">抽赏</span><span>购物车</span><span>我的</span></nav>
-    </section>
+        <section class="quick-entry" aria-label="快捷入口">
+          <a href="#all" class="entry-item">
+            <span class="entry-icon icon-pig">赏</span>
+            <span>全部赏品</span>
+          </a>
+          <a href="#mine" class="entry-item">
+            <span class="entry-icon icon-gift">奖</span>
+            <span>我的奖品</span>
+          </a>
+          <a href="#notice" class="entry-item">
+            <span class="entry-icon icon-horn">告</span>
+            <span>活动公告</span>
+          </a>
+          <a href="#guide" class="entry-item">
+            <span class="entry-icon icon-book">新</span>
+            <span>新手指南</span>
+          </a>
+        </section>
 
-    <section class="phone">
-      <h2>用户端 · 抽赏页</h2>
-      <div class="card cover">LABUBU 森林秘境基地</div>
-      <div class="progress"><span style="width:64%"></span></div>
-      <div class="btn-row">
-        <button class="btn green">抽1次 · ¥69</button>
-        <button class="btn pink">抽10次 · ¥621</button>
-      </div>
-      <ul class="prize-tier">
-        <li>SSS 隐藏款（1/1）</li>
-        <li>SS 稀有款（2/2）</li>
-        <li>S 大赏（3/3）</li>
-        <li>A 精品赏（10/10）</li>
-        <li>B 普通赏（20/20）</li>
-      </ul>
-    </section>
+        <section class="section-head" id="hot">
+          <h3>热门一番赏</h3>
+          <a href="#more">更多</a>
+        </section>
 
-    <section class="admin">
-      <h2>管理后台 · 数据概览</h2>
-      <div class="stats">
-        <article><p>今日订单数</p><b>1,248</b></article>
-        <article><p>今日销售额</p><b>¥ 23,456</b></article>
-        <article><p>今日抽赏次数</p><b>3,456</b></article>
-        <article><p>用户总数</p><b>12,345</b></article>
-      </div>
-      <div class="panel">
-        <h3>活动管理</h3>
-        <table>
-          <thead><tr><th>活动</th><th>时间</th><th>奖品</th><th>销量</th><th>状态</th></tr></thead>
-          <tbody>
-            <tr><td>LABUBU 森林秘境基地</td><td>2024-05</td><td>32</td><td>¥23,456</td><td>进行中</td></tr>
-            <tr><td>DIMOO 时光漫游系列</td><td>2024-04</td><td>28</td><td>¥18,765</td><td>进行中</td></tr>
-            <tr><td>MEGA SPACE 系列</td><td>2024-03</td><td>25</td><td>¥15,432</td><td>已结束</td></tr>
-          </tbody>
-        </table>
+        <section class="product-grid" aria-label="热门一番赏列表">
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <span class="badge rank">榜</span>
+              <span class="badge hot">HOT</span>
+              <img
+                class="product-image"
+                src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=cute%20designer%20toy%20wearing%20a%20cream%20forest%20bunny%20suit%2C%20lush%20green%20storybook%20background%2C%20collectible%20vinyl%20figure%2C%20soft%20light%2C%20highly%20detailed&image_size=square_hd"
+                alt="LABUBU 森林秘境系列"
+              />
+            </div>
+            <h4>LABUBU 森林秘境</h4>
+            <p class="price">¥69/抽</p>
+            <p class="meta">正热抽 2356 人</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <span class="badge rank">赏</span>
+              <span class="badge new">NEW</span>
+              <img
+                class="product-image"
+                src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=black%20haired%20collectible%20toy%20in%20a%20dark%20outfit%2C%20glowing%20teal%20forest%20scene%2C%20premium%20vinyl%20figure%2C%20soft%20cinematic%20lighting%2C%20adorable%20toy%20photography&image_size=square_hd"
+                alt="DIMOO 时光漫游系列"
+              />
+            </div>
+            <h4>DIMOO 时光漫游</h4>
+            <p class="price">¥59/抽</p>
+            <p class="meta">正热抽 1890 人</p>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image-wrap">
+              <span class="badge rank">赏</span>
+              <span class="badge soft">荐</span>
+              <img
+                class="product-image"
+                src="https://coresg-normal.trae.ai/api/ide/v1/text_to_image?prompt=colorful%20space%20themed%20designer%20toy%20with%20pink%20and%20orange%20helmet%2C%20dreamy%20pastel%20planet%20background%2C%20collectible%20figure%2C%20highly%20detailed%2C%20soft%20light&image_size=square_hd"
+                alt="MEGA SPACE 系列"
+              />
+            </div>
+            <h4>MEGA SPACE 系列</h4>
+            <p class="price">¥79/抽</p>
+            <p class="meta">正热抽 1324 人</p>
+          </article>
+        </section>
+
+        <nav class="tab-bar" aria-label="底部导航">
+          <a href="#home" class="tab-item active">
+            <span class="tab-icon">首</span>
+            <span>首页</span>
+          </a>
+          <a href="#all" class="tab-item">
+            <span class="tab-icon">赏</span>
+            <span>全部赏品</span>
+          </a>
+          <a href="#draw" class="tab-item emphasis">
+            <span class="tab-icon">抽</span>
+            <span>抽赏</span>
+          </a>
+          <a href="#cart" class="tab-item">
+            <span class="tab-icon">车</span>
+            <span>购物车</span>
+          </a>
+          <a href="#profile" class="tab-item">
+            <span class="tab-icon">我</span>
+            <span>我的</span>
+          </a>
+        </nav>
       </div>
     </section>
   </main>

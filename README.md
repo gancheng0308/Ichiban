@@ -9,8 +9,8 @@
 ## 本地运行
 
 ```bash
-python3 -m http.server 8080
-# 访问 http://localhost:8080/web/
+python3 -m http.server 8080 -d docs
+# 访问 http://localhost:8080/
 ```
 
 ## GitHub Pages 自动部署
@@ -37,7 +37,7 @@ git push -u origin main
 
 - `https://<你的GitHub用户名>.github.io/<仓库名>/`
 
-本项目部署目录为 `docs/`，入口文件为 `docs/index.html`。
+本项目只保留 `docs/` 作为页面目录，入口文件为 `docs/index.html`。
 
 ## 下一步建议
 
