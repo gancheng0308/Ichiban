@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>一番赏系统原型</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>一番赏系统原型</h1>
+    <p>根据设计稿快速搭建（用户端 + 管理后台）</p>
+  </header>
+
+  <main class="grid">
+    <section class="phone">
+      <h2>用户端 · 首页</h2>
+      <div class="card hero">甜心马卡龙系列一番赏</div>
+      <div class="menu">
+        <span>全部赏品</span><span>我的奖品</span><span>活动公告</span><span>新手指南</span>
+      </div>
+      <div class="product-list">
+        <article><b>LABUBU 森林秘境</b><p>¥69/抽</p></article>
+        <article><b>DIMOO 时光漫游</b><p>¥59/抽</p></article>
+        <article><b>MEGA SPACE 系列</b><p>¥79/抽</p></article>
+      </div>
+      <nav class="bottom-nav"><span>首页</span><span>全部赏品</span><span class="active">抽赏</span><span>购物车</span><span>我的</span></nav>
+    </section>
+
+    <section class="phone">
+      <h2>用户端 · 抽赏页</h2>
+      <div class="card cover">LABUBU 森林秘境基地</div>
+      <div class="progress"><span style="width:64%"></span></div>
+      <div class="btn-row">
+        <button class="btn green">抽1次 · ¥69</button>
+        <button class="btn pink">抽10次 · ¥621</button>
+      </div>
+      <ul class="prize-tier">
+        <li>SSS 隐藏款（1/1）</li>
+        <li>SS 稀有款（2/2）</li>
+        <li>S 大赏（3/3）</li>
+        <li>A 精品赏（10/10）</li>
+        <li>B 普通赏（20/20）</li>
+      </ul>
+    </section>
+
+    <section class="admin">
+      <h2>管理后台 · 数据概览</h2>
+      <div class="stats">
+        <article><p>今日订单数</p><b>1,248</b></article>
+        <article><p>今日销售额</p><b>¥ 23,456</b></article>
+        <article><p>今日抽赏次数</p><b>3,456</b></article>
+        <article><p>用户总数</p><b>12,345</b></article>
+      </div>
+      <div class="panel">
+        <h3>活动管理</h3>
+        <table>
+          <thead><tr><th>活动</th><th>时间</th><th>奖品</th><th>销量</th><th>状态</th></tr></thead>
+          <tbody>
+            <tr><td>LABUBU 森林秘境基地</td><td>2024-05</td><td>32</td><td>¥23,456</td><td>进行中</td></tr>
+            <tr><td>DIMOO 时光漫游系列</td><td>2024-04</td><td>28</td><td>¥18,765</td><td>进行中</td></tr>
+            <tr><td>MEGA SPACE 系列</td><td>2024-03</td><td>25</td><td>¥15,432</td><td>已结束</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
